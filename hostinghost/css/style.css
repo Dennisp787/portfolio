@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Start Global styles */
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+  background-color: white;
+  background: linear-gradient(
+    176deg,
+    rgba(88, 129, 155, 0.1) 15%,
+    rgba(255, 255, 255, 1) 15%
+  );
+}
+
+*:not(.slick-track):not(.slick-list) {
+  transition: 0.4s;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.rounded {
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  color: #eee;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #1d3557;
+  font-weight: 400;
+  position: relative;
+}
+.rounded:hover {
+  top: 3px;
+  left: 3px;
+}
+.price {
+  color: #457b9d;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+p {
+  margin: 0;
+}
+p.large-paragraph {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 0 50px;
+  margin-bottom: 25px;
+}
+
+.greyed {
+  color: #666;
+  text-decoration: line-through;
+}
+/* End Global Styles*/
+
+/* Start header styles*/
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(69, 123, 157, 0.05);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  height: 50px;
+  top: 0;
+}
+
+#logo {
+  font-family: "Ubuntu", sans-serif;
+  color: #1d3557;
+  font-size: 1.8rem;
+  text-decoration: none;
+  position: relative;
+  bottom: 5px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.hamburger {
+  border: 1px solid #fff;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.hamburger .strip {
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.close {
+  display: none;
+}
+
+header ul li a {
+  color: #1d3557;
+  font-size: 16px;
+  text-decoration: none;
+}
+header ul li a:hover,
+header ul li a.active {
+  color: #071b27;
+}
+
+nav {
+  position: relative;
+  bottom: 8px;
+  font-weight: 600;
+}
+
+header ul.is-sticky li a {
+  color: #fff;
+}
+
+/* end header style */
+
+/*Start ad styles*/
+
+#ad:first-of-type h2 {
+  margin-bottom: 2rem;
+}
+#ad {
+  margin: 170px 0;
+}
+#buy {
+  text-align: center;
+}
+#buy > button {
+  width: 350px;
+  font-size: 1.5rem;
+}
+
+#buy > span {
+  letter-spacing: 0.1rem;
+}
+#buy > span > p {
+  margin-top: -30px;
+}
+
+/*End ad styles*/
+
+/*Start plan style*/
+#plan {
+  padding: 3rem 0;
+  margin: 150px 0;
+  text-align: center;
+}
+#plan .flex > div {
+  width: 20%;
+  padding: 0 2em;
+}
+#plan ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#plan .flex > div > p {
+  color: #457b9d;
+  font-style: italic;
+}
+
+#plan .fas {
+  font-size: 12px;
+  color: green;
+}
+
+#plan h2 {
+  margin-bottom: 50px;
+}
+#plan a {
+  text-decoration: none;
+  color: #457b9d;
+}
+
+#plan a:hover {
+  text-decoration: underline;
+}
+/*End plan style/
+
+/*Start features styles*/
+#features h1 {
+  margin-bottom: 25px;
+}
+#features .flex > div {
+  width: 25%;
+  padding: 0 2em;
+}
+#features {
+  text-align: center;
+}
+/*end features styles*/
+
+/*Start testimonials styles*/
+#testimonials {
+  margin-top: 150px;
+  background: rgba(69, 123, 157, 1);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(69, 123, 157, 0.1) 10%,
+    rgba(69, 123, 157, 0.1) 82%,
+    rgba(255, 255, 255, 1) 32%
+  );
+}
+#testimonial-slider .slick-slide {
+  text-align: center;
+}
+
+#testimonial-slider blockquote {
+  font-family: "Ubuntu", "sans-serif";
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 540px;
+  margin: 50px auto;
+  font-weight: 300;
+}
+#testimonials-slider .caption {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.caption p {
+  font-family: "Ubuntu", "sans-serif";
+  position: relative;
+  bottom: 5px;
+  font-size: 1.2rem;
+}
+#testimonial-slider .slick-arrow {
+  text-decoration: none;
+  position: absolute;
+  font-size: 40px;
+  color: #457b9d;
+  top: 50%;
+  margin-top: -35px;
+  z-index: 1;
+}
+#testimonial-slider .slick-next {
+  right: 0;
+}
+/*end testimonials sryles*/
+
+/*Start support styles*/
+#support {
+  margin-top: 100px;
+  text-align: center;
+}
+#support h1 {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+#support a {
+  text-decoration: none;
+  color: #000;
+}
+#support a:hover {
+  text-decoration: underline;
+}
+#support .fab,
+#support .fas {
+  font-size: 2.5rem;
+  color: rgba(69, 123, 157, 1);
+}
+#support .flex > div {
+  width: 33%;
+}
+/*end support sryles*/
+
+/*Start signup styles*/
+#signup {
+  margin-top: 100px;
+}
+
+#signup .flex > div {
+  width: 50%;
+}
+#signup h1 {
+  font-size: 2rem;
+}
+.banner {
+  text-align: center;
+  background-color: #1d3557;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#signup button {
+  font-family: "Ubuntu", sans-serif;
+  width: 350px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border: none;
+  line-height: 1.5;
+  background-color: #457b9d;
+  height: 75px;
+  font-weight: 500;
+}
+
+#signup .price {
+  margin: -15px;
+  color: white;
+}
+/*End signup styles*/
+
+/* start footer styles*/
+footer {
+  background-color: #1d3557;
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+#about {
+  width: 30%;
+}
+#quicklinks {
+  width: 30%;
+}
+#social {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 2px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+footer .fab {
+  font-size: 20px;
+}
+footer .small {
+  margin: 3rem;
+  display: block;
+  text-align: center;
+}
+/* end footer styles*/
+
+/*Start media queries*/
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+  }
+
+  #nav-toggle {
+    position: relative;
+    display: block;
+    top: 10px;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #a8dadc;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+
+  .close {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+
+  #signup button {
+    top: 30px;
+  }
+  #signup .price {
+    margin: 0;
+  }
+  #signup h3 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  p.large-paragraph {
+    font-size: 1rem;
+  }
+  #signup button {
+    width: 350px;
+    position: inherit;
+    margin: 10px auto;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .price {
+    font-size: 0.8rem;
+  }
+  .container {
+    max-width: 540px;
+  }
+
+  #plan .flex,
+  #ad .flex,
+  #signup .flex {
+    flex-wrap: wrap;
+  }
+  #plan .flex > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #signup .flex > div {
+    width: 100%;
+  }
+  #signup .price {
+    color: #457b9d;
+  }
+  .banner {
+    background-color: white;
+    color: black;
+  }
+
+  #ad {
+    margin-top: 100px;
+  }
+  #buy {
+    margin: 0 auto;
+  }
+
+  #buy > span > p {
+    margin: 0;
+  }
+  #testimonial-slider .slick-arrow {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  #testimonial-slider .slick-arrow {
+    font-size: 15px;
+  }
+  #testimonial-slider blockquote {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #testimonial-slider p {
+    font-size: 1rem;
+  }
+
+  #support .flex,
+  #features .flex {
+    flex-wrap: wrap;
+  }
+
+  #support .flex > div,
+  #features .flex > div {
+    width: 100%;
+    margin: 15px auto;
+  }
+  #ad button.rounded {
+    width: 250px;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer .flex {
+    flex-wrap: wrap;
+  }
+  #about,
+  #quicklinks,
+  #social {
+    margin: 15px auto;
+    text-align: center;
+    width: 100%;
+  }
+}
+/*end media queries*/
