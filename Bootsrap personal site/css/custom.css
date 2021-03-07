@@ -1,0 +1,164 @@
+body{
+ 	background: black;
+ 	font-size: 14px;
+  font-family: copperplate, arial;
+  color: white;
+  text-align: center;
+}
+
+
+/* Navigation */
+.navbar{
+  margin-top: 10px;
+
+}
+
+li.nav-item {
+  width: 100px;
+}
+
+
+/* Sections */
+#about, #tech,#minor,#contact{
+  width: 100%;
+  padding: 0 20%;
+  margin: 50px 0 50px 0;
+}
+
+.dennis{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+
+/* Carousel */
+.carousel{
+  margin: 50px auto;
+
+
+}
+
+.carousel-item{
+    margin-top: 20px;
+}
+
+.carousel-caption{
+  position: sticky;
+  bottom: 0;
+}
+a.carousel-control-prev,a.carousel-control-next{
+  text-decoration: none;
+}
+
+span.fas{
+  font-size: 50px;
+
+}
+
+div.carousel-item > .btn-primary{
+  margin: 0 10px 50px 10px;
+}
+/* Technologies section */
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.fab{
+  font-size: 24px;
+}
+
+.text{
+ font-size: 12px;
+}
+
+.ticons:hover{
+  bottom: 5px;
+  left: 1px;
+}
+.pbutton a{
+  padding: 20px 0 20px;
+}
+
+/* Footer */
+
+footer a > i.fab{
+  font-size: 14px;
+}
+a > i{
+  margin: 0px 10px;
+  color: white;
+  text-decoration: none;
+}
+.backToTop small a, .backToTop small a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Form */
+ form{
+   width: 50%;
+   margin: 0 auto;
+   max-width: 300px;
+   min-width: 200px;
+
+}
+
+ textarea{
+   resize: none;
+}
+
+.form-control{
+  background:black;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+}
+.form-control:focus{
+  bottom: 1px;
+  right: 10px;
+  position: relative;
+}
+form > button.btn-primary{
+  margin: 10px auto;
+
+}
+
+
+
+@media only screen and (max-width: 414px){
+  h1{
+    font-size: 24px;
+  }
+  .lead{
+    font-size: 12px;
+  }
+
+  .ticons{
+    display: block;
+    margin: 0 auto;
+}
+.carousel-caption > h5, p.lead{
+  font-size: 15px;
+}
+
+.form-control{
+  font-size: 12px;
+}
+ .carousel-indicators{
+   top: 5px;
+ }
+ .fab{
+   font-size: 12px;
+ }
+ 
+}
