@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+/*Start global style*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.flex {
+  display: flex;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.9rem;
+}
+/*end global styles*/
+
+/*start left side styles*/
+section h1 {
+  background-color: #144266;
+  font-style: italic;
+}
+.left {
+  text-align: center;
+  color: white;
+  background-color: #33658a;
+}
+.left a {
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+.left a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.left ul {
+  text-align: left;
+}
+.left ul li {
+  padding: 1px 10px;
+}
+#contact ul {
+  list-style: none;
+}
+/*End left side styles*/
+
+/*start right side styles*/
+
+.right {
+  padding: 10px;
+}
+.right div {
+  margin: 20px 0;
+}
+.right h5 {
+  margin: 10px 0;
+}
+.right h3 {
+  font-style: italic;
+}
+/*End right side styles*/
+
+/*Start media queries*/
+
+/*Larger Screens*/
+@media (max-width: 1920px) {
+  body {
+    height: 100vh;
+  }
+  .left {
+    width: 20%;
+  }
+}
+/*Ipad Pro*/
+
+@media (min-width: 834px) and (max-width: 1024px) {
+  .left {
+    width: 40%;
+  }
+}
+
+/*Medium screens*/
+@media (max-width: 800px) {
+  body {
+    height: 100%;
+  }
+  .right,
+  .left {
+    width: 50%;
+  }
+}
+/* Ipad and Ipad mini*/
+@media (max-width: 769px) {
+  body {
+    height: 100vh;
+  }
+  .left {
+    width: 40%;
+  }
+}
+
+/*Smart Phones*/
+@media (max-width: 736px) {
+  .left ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+}
+/*end media queries*/
